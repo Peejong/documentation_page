@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FFC: Technical Documentation Page</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav id="navbar">
+      <header>JS Basics</header>
+      <a href="#introduction" class="nav-link">Introduction</a>
+      <a href="#what_is_javascript" class="nav-link">What is JavaScript</a>
+      <a href="#prestiques" class="nav-link">Prestiques</a>
+      <a href="#hello_world_example" class="nav-link">Hello World Example</a>
+      <a href="#basic_crash_course" class="nav-link">Basic Crash Course</a>
+    </nav>
+  
+    <main id="main-doc">
+      <section id="introduction" class="main-section">
+        <header>Introduction</header>
+        <p>
+          JavaScript is a programming language that adds interactivity to your website. This happens in games, 
+          in the behavior of responses when buttons are pressed or with data entry on forms; with dynamic
+          styling; with animation, etc. This article helps you get started with JavaScript and furthers 
+          your understanding of what is possible.
+        </p> 
+      </section>
+      <section id="what_is_javascript" class="main-section">
+        <header>What is JavaScript</header>
+        <p>
+          JavaScript ("JS" for short) is a full-fledged dynamic programming language that can add interactivity
+          to a website. It was invented by Brendan Eich.  
+        </p>
+        <p>
+          JavaScript is versatile and beginner-friendly. With more experience, you'll be able to create games,
+           animated 2D and 3D graphics, comprehensive database-driven apps, and much more!
+        </p>
+        <p>
+          JavaScript itself is relatively compact, yet very flexible. Developers have written a variety of tools
+           on top of the core JavaScript language, unlocking a vast amount of functionality with minimum effort. These include:
+        </p>
+        <ul>
+          <li>
+            Browser Application Programming Interfaces (APIs) built into web browsers, providing functionality 
+            such as dynamically creating HTML and setting CSS styles; collecting and manipulating a video stream 
+            from a user's webcam, or generating 3D graphics and audio samples.
+          </li>
+          <li>
+            Third-party APIs that allow developers to incorporate functionality in sites from other content providers,
+            such as Twitter or Facebook
+          </li>
+          <li>
+            Third-party frameworks and libraries that you can apply to HTML to accelerate the work of building sites
+            and applications.
+          </li>
+        </ul>
+      </section>
+      <section id="prestiques" class="main-section">
+        <header>Prestiques</header>
+        <p>
+          JavaScript is arguably more difficult to learn than related technologies such as HTML and CSS. Before attempting
+          to learn JavaScript, you are strongly advised to get familiar with at least these two technologies first, and perhaps
+          others as well. Start by working through the following modules:
+        </p>
+        <ul>
+          <li>Getting started with the Web</li>
+          <li>Introduction to HTML</li>
+          <li>Introduction to CSS</li>
+        </ul>
+        <p>Having previous experience with other programming languages might also help.</p>
+        <p>
+          After getting familiar with the basics of JavaScript, you should be in a position to learn about more advanced 
+          topics, for example:
+        </p>
+        <ul>
+          <li>JavaScript in depth</li>
+          <li>Web APIs</li>
+        </ul>
+      </section>
+      <section id="hello_world_example" class="main-section">
+        <header>Hello World Example</header>
+        <p>
+          JavaScript is one of the most popular modern web technologies! As your JavaScript skills grow, your websites
+           will enter a new dimension of power and creativity.
+        </p>
+        <p>
+          However, getting comfortable with JavaScript is more challenging than getting comfortable with HTML and 
+          CSS. You may have to start small, and progress gradually. To begin, let's examine how to add JavaScript 
+          to your page for creating a Hello world! example. 
+        </p>
+        <ol>
+          <li>
+            Go to your test site and create a new folder named scripts. Within the <span class="span_default">scripts</span> folder, 
+            create a new file called main.js, and save it.
+          </li>
+          <li>
+            In your <span class="span_default">index.html</span> file, enter this code on a new line, just before the closing 
+            <span class="span_default">body</span> tag:
+            <code>
+              <span class="span_code"><</span>script src="scripts/main.js"<span class="span_code">></span><span class="span_code"><</span>/script<span class="span_code">></span>
+            </code>
+          </li>
+          <li>
+            This is doing the same job as the <span class="span_default">link</span> element for CSS. It applies the JavaScript to the page, so it can have an effect on 
+            the HTML (along with the CSS, and anything else on the page).
+          </li>
+          <li>
+            Add this code to the <span class="span_default">main.js</span> file:
+            <code>
+              const myHeading = document.querySelector('h1');<br>
+              myHeading.textContent = 'Hello world!';
+            </code>
+          </li>
+          <li>
+            Make sure the HTML and JavaScript files are saved. Then load index.html in your browser. You should see something like this:
+            <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics/hello-world.png" alt="hello world example output">
+          </li>
+        </ol>
+      </section>
+      <section id="basic_crash_course" class="main-section">
+        <header>Basic Crash Course</header>
+        <p>
+          To give you a better understanding of how JavaScript works, let's explain some of the core features of the language.
+          It's worth noting that these features are common to all programming languages.
+        </p>
+        <div class="course_variables">
+          <h3>Variables</h3>
+          <p>
+            Variables are containers that store values. You start by declaring a variable with the var (less recommended,
+            dive deeper for the explanation) or the let keyword, followed by the name you give to the variable:
+          </p>
+          <code>
+            let myVariable;
+          </code>
+          <p>
+            After declaring a variable, you can give it a value:
+          </p>
+          <code>
+            myVariable = 'Bob';
+          </code>
+          <p>
+            Also, you can do both these operations on the same line:
+          </p>
+          <code>
+            let myVariable = 'Bob';
+          </code>
+          <p>
+            You retrieve the value by calling the variable name:
+          </p>
+          <code>
+            myVariable;
+          </code>
+          <p>
+            After assigning a value to a variable, you can change it later in the code:
+          </p>
+          <code>
+            let myVariable = 'Bob'; <br>
+            myVariable = 'Steve';
+          </code>
+          <p>Note that variables may hold values that have different data types</p>
+        </div>
+        <div class="course_comments">
+          <h3>Comments</h3>
+          <p>
+            Comments are snippets of text that can be added along with code. The 
+            browser ignores text marked as comments. You can write comments in JavaScript just as you can in CSS:
+          </p>
+          <code>
+            /* <br>
+            &nbsp; Everything in between is a comment.<br>
+            */ 
+          </code>
+          <p>
+            If your comment contains no line breaks, it's an option to put it behind two slashes like this:
+          </p>
+          <code>
+            // This is a comment
+          </code>
+        </div>
+        <div class="course_operators">
+          <h3>Operators</h3>
+          <p>
+            An operator is a mathematical symbol that produces a result based on two values (or variables).
+            See  for a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators" target="_blank">Expressions and operators</a>
+            complete list along with some examples.
+          </p>
+        </div>
+        <div class="coarse_conditionals">
+          <h3>Conditionals</h3>
+          <p>
+            Conditionals are code structures used to test if an expression returns true or not. A very common form of conditionals is the <span class="span_default">if ... else</span> 
+            statement. For example:
+          </p>
+          <code>
+            let iceCream = 'chocolate';<br>
+            if(iceCream === 'chocolate') { <br>
+            &nbsp; alert('Yay, I love chocolate ice cream!');<br>
+            } else {<br>
+            &nbsp; alert('Awwww, but chocolate is my favorite...');<br>
+            }
+          </code>
+          <p>
+            The expression inside the <span class="span_default">if( ... )</span> is the test. This uses the identity operator (as described above) to compare the variable <span class="span_default">iceCream</span> with the string 
+            <span class="span_default">chocolate</span> to see if the two are equal. If this comparison returns true, the first block of code runs. If the comparison is not true, the second block of 
+            code—after the <span class="span_default">else</span> statement—runs instead.
+          </p>
+        </div>
+        <div class="course_functions">
+          <h3>Functions</h3>
+          <p>
+            Functions are a way of packaging functionality that you wish to reuse. It's possible to define a body of code as a function that 
+            executes when you call the function name in your code. This is a good alternative to repeatedly writing the same code. In this <a href="https://developer.mozilla.org/en-US/docs/Glossary/Function/" target="_blank" > link</a>,
+            you can learn more about this topic.
+          </p>
+
+        </div>
+        <div class="course_events">
+          <h3>Events</h3>
+          <p>
+            Real interactivity on a website requires event handlers. These are code structures that listen for activity in the browser, and run code in response. The most 
+            obvious example is handling the click event, which is fired by the browser when you click on something with your mouse. To demonstrate this, enter the following 
+            into your console, then click on the current webpage:
+          </p>
+          <code>
+            document.querySelector('html').onclick = function() { <br>
+            &nbsp; alert('Ouch! Stop poking me!'); <br> 
+            } 
+          </code>
+          <p>
+            There are many ways to attach an event handler to an element. Here we select the <span class="span_default">html</span> element, setting its <span class="span_default">onclick</span> handler property equal to an anonymous
+            (i.e. nameless) function, which contains the code we want the click event to run.
+          </p>
+          <p>Note that</p>
+          <code>
+            document.querySelector('html').onclick = function() {};
+          </code>
+          <p>is equivalent to</p>
+          <code>
+            let myHTML = document.querySelector('html');<br>
+            myHTML.onclick = function() {};
+          </code>
+          <p>It's just shorter.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+  line-height: 2;
+  background-color: #0a0a23;
+  color: #fff;
+}
+
+header {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h3 {
+  line-height: 1.5;
+  display: inline-block;
+  padding: 0 0.5rem;
+  font-size: 2.25rem;
+  font-weight: 600;
+  background-color: #0a0a23;
+  margin-bottom: 1rem;
+}
+
+p,
+li,
+code,
+a {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+code {
+  display: block;
+  margin: 1.75rem 0;
+  padding: 2rem 1rem;
+  background-color: #2a2a40;
+}
+
+li {
+  margin-left: 4rem;
+}
+
+section {
+  padding: 2rem 2.5rem;
+  background-color: #1b1b32;
+}
+
+img {
+  width: 100%;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 3rem;
+  display: flex;
+}
+
+#navbar {
+  margin-right: 5rem;
+}
+
+#navbar header ~ *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+#navbar a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+  padding: 0.75rem 1.5rem;
+  transition: background-color 0.2s ease-in;
+}
+
+#navbar a:hover,
+#navbar a:focus {
+  background-color: #2a2a40;
+}
+
+#main-doc > *:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+#main-doc a,
+#main-doc .span_default {
+  text-decoration: none;
+  color: #bcbce9;
+}
+
+#main-doc .span_default {
+  background-color: #2a2a40;
+  font-style: italic;
+}
+
+#what_is_javascript header ~ *:not(:last-child),
+#prestiques header ~ *:not(:last-child),
+#hello_world_example header ~ *:not(:last-child),
+#basic_crash_course header ~ *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+#hello_world_example ol li::before {
+  content: "";
+  width: 1rem;
+  display: inline-block;
+}
+
+#basic_crash_course div {
+  padding: 0 3.25rem;
+}
+
+@media only screen and (max-width: 75em) {
+  header {
+    font-size: 2.5rem;
+  }
+
+  p,
+  li,
+  code,
+  a {
+    font-size: 1.6rem;
+  }
+
+  section {
+    padding: 1.75rem 2rem;
+  }
+
+  #navbar {
+    margin-right: 3rem;
+  }
+}
+
+@media only screen and (max-width: 67.1875em) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #navbar {
+    text-align: center;
+    margin: 0 0 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  section {
+    padding: 1.5rem 1.75rem;
+    width: 125ch;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  li {
+    margin-left: 2.5rem;
+  }
+
+  code {
+    margin: 1.5rem 0;
+  }
+
+  #navbar header ~ *:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+
+  #what_is_javascript header ~ *:not(:last-child),
+  #prestiques header ~ *:not(:last-child),
+  #hello_world_example header ~ *:not(:last-child),
+  #basic_crash_course header ~ *:not(:last-child) {
+    margin-bottom: 1.75rem;
+  }
+
+  #hello_world_example ol li::before {
+    content: "";
+    width: 0;
+  }
+}
+
+@media only screen and (max-width: 45.3125em) {
+  p,
+  li,
+  code,
+  a {
+    font-size: 1.5rem;
+  }
+
+  section {
+    width: 100ch;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  section {
+    padding: 1.25rem 1.5rem;
+    width: 75ch;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  li {
+    margin-left: 1.75rem;
+  }
+
+  code {
+    margin: 1.25rem 0;
+  }
+
+  #navbar header ~ *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  #what_is_javascript header ~ *:not(:last-child),
+  #prestiques header ~ *:not(:last-child),
+  #hello_world_example header ~ *:not(:last-child),
+  #basic_crash_course header ~ *:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 26.875em) {
+  header {
+    font-size: 2rem;
+  }
+
+  p,
+  li,
+  a {
+    font-size: 1.2rem;
+  }
+
+  code {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    width: 50ch;
+  }
+}
